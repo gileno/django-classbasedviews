@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="row">
+    <p>Name: {{ name }}</p>
+    <pre>
+class Home4(TemplateView):
+
+    template_name = 'home4.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(Home4, self).get_context_data(**kwargs)
+        context['name'] = u'Gileno Filho'
+        return context
+    </pre>
+</div>
+{% endblock %}
